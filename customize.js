@@ -2,7 +2,7 @@ module.exports = {
     version: "0.1.0",
   
     actions: async function (repoName, answers, copy, mergeFiles) {
-        await copy(repoName,"./")
+        await copy(repoName, answers)
         //TODO: ln -s /opt/others/vuepress/nginx/dist/ /usr/share/nginx/html/docs
         //TODO: create/update definition (original na learning)
         //TODO: create/update permissions
